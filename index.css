@@ -1,0 +1,181 @@
+/* Coded by Vez Codez aka Usi */
+
+html, body
+{
+    background-color: #1c1c35;
+}
+
+.card
+{
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.57);
+    border-radius: 20px;
+    -webkit-box-shadow: 0 0 20px #000000;
+    box-shadow: 0 0 20px #000000;
+    transition: transform .2s;
+    padding: 35px;
+    margin: 0;
+    /* border-bottom: #6464df solid 3px; */
+    animation: smaller .3s forwards ease;
+    overflow: hidden;
+    visibility: hidden;
+
+}
+
+.card:hover
+{
+    /* -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); */
+    animation: bigger .3s forwards ease;
+}
+
+
+@keyframes bigger {
+    0%
+    {
+        position: absolute;
+        width: 250px;
+        height: 350px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(0, 0, 0, 0.57);
+        border-radius: 20px;
+        -webkit-box-shadow: 0 0 20px #000000;
+        box-shadow: 0 0 20px #000000;
+        transition: transform .2s;
+        padding: 35px;
+        margin: 0;
+        overflow: hidden;
+
+    }
+    100%
+    {
+        position: absolute;
+        width: 280px;
+        height: 390px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(0, 0, 0, 0.57);
+        border-radius: 20px;
+        -webkit-box-shadow: 0 0 20px #000000;
+        box-shadow: 0 0 30px #000;
+        transition: transform .2s;
+        padding: 35px;
+        margin: 0;
+        border-bottom: #6464df solid 3px;
+        overflow: hidden;
+
+
+    }
+}
+@keyframes smaller {
+    100%
+    {
+        position: absolute;
+        width: 250px;
+        height: 350px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(0, 0, 0, 0.57);
+        border-radius: 20px;
+        -webkit-box-shadow: 0 0 20px #000000;
+        box-shadow: 0 0 20px #000000;
+        transition: transform .2s;
+        padding: 35px;
+        margin: 0;
+        overflow: hidden;
+    }
+    0%
+    {
+        position: absolute;
+        width: 280px;
+        height: 390px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(0, 0, 0, 0.57);
+        border-radius: 20px;
+        -webkit-box-shadow: 0 0 20px #000000;
+        box-shadow: 0 0 20px #000000;
+        transition: transform .2s;
+        padding: 35px;
+        margin: 0;
+        border-bottom: #6464df solid 3px;
+        overflow: hidden;
+
+    }
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    background-color: #3642ce;
+    border: none;
+    border-radius: 0px 0px 0px 10px;
+    z-index: 10;
+    cursor: pointer;
+  }
+  .close:hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    background-color: #4555ff;
+    border: none;
+  }
+  .close:before, 
+  .close:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 20px;
+    background-color: #1c1a1a;
+    transform: rotate(45deg) translate(-50%, -50%);
+    transform-origin: top left;
+    content: '';
+  }
+  .close:after {
+    transform: rotate(-45deg) translate(-50%, -50%);
+  }
+
+#cardO
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.57);
+    border-radius: 20px;
+    width: 150px;
+    height: 45px;
+    cursor: pointer;
+    color: #3642ce;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#cardO:hover
+{
+    background-color: rgba(0, 0, 0, 0.411);
+}
+
+/* Coded by Vez Codez aka Usi */
